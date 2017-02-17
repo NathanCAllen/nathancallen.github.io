@@ -1,6 +1,5 @@
 body {
-        background-color: #33649c;
-        color: #9c6b33;
+        background-color: #7ba4d4;
 }
 
 h2 {
@@ -17,7 +16,7 @@ ul {
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #9c6b33;
+        background-color: grey;
 }
 
 li {
@@ -27,14 +26,14 @@ li {
 li a {
         font-weight: bold;
         display: block;
-        color: #33649c;
+        color: white;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
 }
 
 li a:hover {
-        background-color: #895e2d;
+        background-color: #111;
 }
 
 img {
