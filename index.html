@@ -3,9 +3,10 @@
 
 <head>
     <title>Nathan Allen</title>
-    <link rel="stylesheet" type="text/css" href="my_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/my_style.css">
     <meta charset="utf-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script type="text/javascript" src="scripts/page_navigate.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <h2>Hi! Welcome to my personal web page. You'll find my bio and
         resume in the menu above. Thanks for stopping by!</h2>
         <p><img alt="Picture of me should be here."
-            src="Nathan_Allen_Cocoa.jpg" height="500"/></p>
+            src="media/Nathan_Allen_Cocoa.jpg" height="500"/></p>
         <p class="caption">^me with some delicious hot cocoa, January 2017</p>
     </div>
 
@@ -40,8 +41,8 @@
         <h1>Nathan Allen</h1>
         <p>nathan@allenhub.com </p>
         <p id="pdf_text">To show my full resume, click
-            <a href="javascript:showPDF()">here</a></p>
-        <object id="resume_pdf" data="Nathan_Allen_Resume.pdf"
+            <a href="javascript:showPDF();">here</a></p>
+        <object id="resume_pdf" data="media/Nathan_Allen_Resume.pdf"
             height=750 width=1000></object>
         <h3>EDUCATION</h3>
         <p class="bolded indented">Tufts University, Medford, MA</p>
@@ -113,46 +114,6 @@
                                 plan (Polyhack 2016).</li> </ul> </li>
         </ul>
     </div>
-
-    <script type="text/javascript">
-        function home () {
-            document.getElementById('home').style.display = 'block';
-            document.getElementById('bio').style.display = 'none';
-            document.getElementById('resume').style.display = 'none';
-
-            document.body.style.backgroundColor = "#7ba4d4";
-        };
-
-        function bio () {
-            document.getElementById('bio').style.display = 'block';
-            document.getElementById('home').style.display = 'none';
-            document.getElementById('resume').style.display = 'none';
-
-            document.body.style.backgroundColor = "#7ba4d4";
-        };
-
-        function resume () {
-            document.getElementById('resume').style.display = 'block';
-            document.getElementById('bio').style.display = 'none';
-            document.getElementById('home').style.display = 'none';
-
-            document.body.style.backgroundColor = "white";
-        };
-
-        function showPDF () {
-            if (document.getElementById('resume_pdf').style.display != 'block') {
-                document.getElementById('resume_pdf').style.display = 'block';
-                document.getElementById('pdf_text').innerHTML =
-                'To hide my full resume, click ' +
-                    '<a href="javascript:showPDF()">here</a>';
-            } else {
-                document.getElementById('resume_pdf').style.display = 'none';
-                document.getElementById('pdf_text').innerHTML =
-                    'To show my full resume, click ' +
-                        '<a href="javascript:showPDF()">here</a>';
-            };
-        };
-    </script>
 </body>
 
 </html>
