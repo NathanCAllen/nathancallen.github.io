@@ -6,3 +6,8 @@ I spent about 5 hours on this assignment.
 This project provides the code for the web page displayed on
 
 nathancallen.github.io
+
+UPDATE: 16/4
+
+  I have condensed the three pages to one.
+  I have embedded the pdf into my page.
