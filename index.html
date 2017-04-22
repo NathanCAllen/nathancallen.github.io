@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="styles/my_style.css">
     <meta charset="utf-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/jquery.sliderTabs.min.css">
+    <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.sliderTabs.js"></script>
     <script type="text/javascript" src="scripts/page_navigate.js"></script>
 </head>
 
@@ -14,6 +17,7 @@
         <li class="menu"><a href="javascript:home();">Home</a></li>
         <li class="menu"><a href="javascript:bio();">Bio</a></li>
         <li class="menu"><a href="javascript:resume();">Resume</a></li>
+        <li class="menu"><a href="javascript:projects();">Projects</a></li>
         <li class="menu"><a href="https://github.com/nathancallen"
             target="_blank">Github Page</a></li>
     </ul>
@@ -26,15 +30,15 @@
     </div>
 
     <div id="bio">
-    <h2>Nathan Allen:</h2>
-    <p> I grew up in the suburbs of Boston. I started my studies at Tufts
-        in the fall of 2015, and have been pursuing majors in computer
-        science and physics. I love to code, and I have a passion for
-        designing and implementing web apps. I love fantasy and sci-fi,
-        especially the works of R.A. Salvatore, Timothy Zahn, and George R.
-        R. Martin. I also love sprawling open-world RPG's and weird indie
-        games with cute graphics. I intend to graduate in the spring of 2019,
-        with fanfare and a job.</p>
+        <h2>Nathan Allen:</h2>
+        <p> I grew up in the suburbs of Boston. I started my studies at Tufts
+            in the fall of 2015, and have been pursuing majors in computer
+            science and physics. I love to code, and I have a passion for
+            designing and implementing web apps. I love fantasy and sci-fi,
+            especially the works of R.A. Salvatore, Timothy Zahn, and George R.
+            R. Martin. I also love sprawling open-world RPG's and weird indie
+            games with cute graphics. I intend to graduate in the spring of
+            2019, with fanfare and a job.</p>
     </div>
 
     <div id="resume">
@@ -46,10 +50,9 @@
             height=750 width=1000></object>
         <h3>EDUCATION</h3>
         <p class="bolded indented">Tufts University, Medford, MA</p>
-        <p class="indented">Bachelor of Science in Computer Science, Bachelor of Arts in Physics:
-                May 2019 </p>
-    <p class="indented">GPA: 3.28</p>
-
+        <p class="indented">Bachelor of Science in Computer Science, Bachelor of
+                Arts in Physics: May 2019 </p>
+        <p class="indented">GPA: 3.28</p>
         <p class="bolded">Spring 2017:</p>
         <ul>
                 <li>Algorithms</li>
@@ -102,17 +105,67 @@
             <ul>
             <li>Wrote a C++ program that found and printed all
                 words on a Boggle board.</li> </ul> </li>
-                <li>King's Tourney
-                        <ul>
-                        <li>Designed and wrote a simple turn-based combat game
-                                in C++.</li> </ul> </li>
-                <li>Dewick Nutrition
-                        <ul>
-                        <li>Designed and coded a web application
-                                that retrieves nutrition info for Dewick Hall's
-                                dining options, then calculates a daily meal
-                                plan (Polyhack 2016).</li> </ul> </li>
+        <li>King's Tourney
+                <ul>
+                <li>Designed and wrote a simple turn-based combat game
+                        in C++.</li> </ul> </li>
+        <li>Dewick Nutrition
+                <ul>
+                <li>Designed and coded a web application
+                        that retrieves nutrition info for Dewick Hall's
+                        dining options, then calculates a daily meal
+                        plan (Polyhack 2016).</li> </ul> </li>
         </ul>
+    </div>
+    <div id="projects">
+        <div id="mySliderTabs">
+            <p></p>
+            <ul>
+                <li><a href="#boggle">Boggle Solver</a></li>
+                <li><a href="#tourney">King's Tourney</a></li>
+                <li><a href="#dewick">Dewick Nutrition</a></li>
+            </ul>
+
+            <div id="boggle">
+                <h2>Boggle Solver</h2>
+                <p class="project">This program finds all words of length
+                greater than or equal to 3 on a given 4X4 Boggle board and
+                prints them out to the terminal. It also provides the only way
+                for a Computer Science major to beat a Linguistics major at
+                Boggle.</p>
+                <p class="project italicized indented">Code snippets and more to
+                    come.</p>
+                <p class="project">To visit the full project, click 
+                    <a href="https://www.github.com/nathancallen/boggle"
+                    target="_blank">here</a></p>
+            </div>
+            <div id="tourney">
+                <h2>King's Tourney</h2>
+                <p class="project">This is a simple text-based game that follows
+                a young knight in his quest to fight in and win the tournament
+                for King Eorland's birthday. Will you lead your hero to victory?
+                Or go home, broken and defeated?</p>
+                <p class="project italicized indented">Code snippets and more to
+                    come.</p>
+                <!-- <p class="project">To visit the full project, click 
+                    <a href="https://www.github.com/nathancallen/kings-tourney"
+                    target="_blank">here</a></p> -->
+            </div>
+            <div id="dewick">
+                <h2>Dewick Nutrition</h2>
+                <p class="project">This web app was designed to data mine
+                information from Dewick-MacPhie's online menu and design a set
+                of meals for the day, providing all necessary nutrients while
+                balancing caloric intake.<br>This project was completed during
+                Tuft's 2016 Polyhack.</p>
+                <p class="project italicized indented">Code snippets and more to
+                    come.</p>
+                <p class="project">To visit the full project, click 
+                    <a href="https://www.github.com/tufts-diet/dewick-nutrition"
+                    target="_blank">here</a></p>
+
+            </div>
+        </div>
     </div>
 </body>
 

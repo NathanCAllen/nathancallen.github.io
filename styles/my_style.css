@@ -11,6 +11,11 @@ p {
         font-size: 20px;
 }
 
+p.project {
+        font-weight: normal;
+        font-size: 14px;
+}
+
 ul.menu {
         list-style-type: none;
         margin: 0;
@@ -23,7 +28,7 @@ li.menu {
         float: left;
 }
 
-li a {
+li.menu a {
         font-weight: bold;
         display: block;
         color: white;
@@ -32,7 +37,7 @@ li a {
         text-decoration: none;
 }
 
-li a:hover {
+li.menu a:hover {
         background-color: #111;
 }
 
@@ -57,6 +62,10 @@ img {
         display: none;
 }
 
+#projects {
+        display: none;
+}
+
 .bolded {
         font-weight: bold;
         font-size: 17px;
@@ -65,6 +74,10 @@ img {
 .indented {
         text-indent: 50px;
         margin: 0;
+}
+
+.italicized {
+        font-style: italic;
 }
 
 li.bolded {
