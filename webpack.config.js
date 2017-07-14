@@ -8,7 +8,7 @@ module.exports = {
         contentBase: './src',
         port: 3000,
     },
-    devtool: 'cheap-module-eval-source-map',
+    devtool: 'cheap-module-source-map',
     entry: './dev/js/index.jsx',
     module: {
         loaders: [
@@ -28,6 +28,12 @@ module.exports = {
         filename: 'js/bundle.min.js',
     },
     plugins: [
-        new webpack.optimize.OccurrenceOrderPlugin()
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify('production'),
+            },
+        })
+        // new webpack.optimize.UglifyJsPlugin()
     ],
 };
