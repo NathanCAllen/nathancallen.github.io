@@ -3,7 +3,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 
 import { Menu } from 'semantic-ui-react';
 
-// import BodyPage from './BodyPage';
+import HomePage from './HomePage';
 
 export default class AllenhubPage extends React.Component {
     constructor(props) {
@@ -20,7 +20,6 @@ export default class AllenhubPage extends React.Component {
     }
 
     render() {
-        // return <h1>hi there</h1>;
         return this.buildPageForUser();
     }
 
@@ -36,7 +35,7 @@ export default class AllenhubPage extends React.Component {
     buildMenuBar() {
         let pages = this.generateMenuBarItems();
         return (
-            <Menu inverted size='large'>
+            <Menu inverted size='huge'>
                 {pages}
             </Menu>
         );
@@ -63,9 +62,8 @@ export default class AllenhubPage extends React.Component {
     }
 
     buildHome() {
-        console.log('foo');
-        return <h1>hi there</h1>;
-        // return <BodyPage page='home' />;
+        // return <h1>hi there</h1>;
+        return <HomePage />;
     }
 
     buildBio() {
