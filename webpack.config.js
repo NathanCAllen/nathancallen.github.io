@@ -3,6 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
     devServer: {
+        historyApiFallback: true,
         inline: true,
         contentBase: './src',
         port: 3000,
