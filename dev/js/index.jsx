@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import AllenhubPage from './AllenhubPage.jsx';
 
 ReactDOM.render(
-    <BrowserRouter>
+    <Router>
         <AllenhubPage name='Nathan' />
-    </BrowserRouter>,
+    </Router>,
     // <h1>hi</h1>,
     document.getElementById('root')
 );

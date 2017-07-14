@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 import { Menu } from 'semantic-ui-react';
 
-import BodyPage from './BodyPage';
+// import BodyPage from './BodyPage';
 
 export default class AllenhubPage extends React.Component {
     constructor(props) {
@@ -28,6 +28,7 @@ export default class AllenhubPage extends React.Component {
         return (
             <div>
                 {this.buildMenuBar()}
+                <hr />
                 {this.buildPage()}
             </div>
         );
@@ -52,20 +53,18 @@ export default class AllenhubPage extends React.Component {
 
     buildPage() {
         return (
-            <main>
-                <Switch>
-                    <Route exact component={this.buildHome} path='/' />
-                    <Route component={this.buildBio} path='/bio' />
-                    <Route component={this.buildResume} path='/resume' />
-                </Switch>
-            </main>
+            <div>
+                <Route exact component={this.buildHome} path='/' />
+                <Route exact component={this.buildBio} path='/bio' />
+                <Route component={this.buildResume} path='/resume' />
+            </div>
         );
     }
 
     buildHome() {
         console.log('foo');
-        // return <h1>hi there</h1>;
-        return <BodyPage page='home' />;
+        return <h1>hi there</h1>;
+        // return <BodyPage page='home' />;
     }
 
     buildBio() {
