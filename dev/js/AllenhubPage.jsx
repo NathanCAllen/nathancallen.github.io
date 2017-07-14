@@ -3,6 +3,8 @@ import { Link, Route, Switch } from 'react-router-dom';
 
 import { Menu } from 'semantic-ui-react';
 
+import BodyPage from './BodyPage';
+
 export default class AllenhubPage extends React.Component {
     constructor(props) {
         super(props);
@@ -62,8 +64,8 @@ export default class AllenhubPage extends React.Component {
 
     buildHome() {
         console.log('foo');
-        return <h1>hi there</h1>;
-        // return <BodyPage page='home' />
+        // return <h1>hi there</h1>;
+        return <BodyPage page='home' />;
     }
 
     buildBio() {
