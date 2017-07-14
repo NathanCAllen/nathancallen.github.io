@@ -26,7 +26,7 @@ export default class AllenhubPage extends React.Component {
         return (
             <div>
                 {this.buildMenuBar()}
-                {/* {this.buildPage()} */}
+                {this.buildPage()}
             </div>
         );
     }

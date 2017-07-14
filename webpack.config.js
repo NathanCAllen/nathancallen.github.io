@@ -20,12 +20,12 @@ module.exports = {
             {
                 test: /\.scss/,
                 loader: 'style-loader!css-loader!sass-loader',
-            },
+            }
         ],
     },
     output: {
         path: path.resolve(__dirname, 'src'),
-        filename: 'js/bundle.min.js'
+        filename: 'js/bundle.min.js',
     },
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin()
