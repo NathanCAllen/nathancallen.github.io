@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
-
-import { Header } from 'semantic-ui-react';
+import { BrowserRouter } from 'react-router-dom';
 
 import AllenhubPage from './AllenhubPage.jsx';
 
 ReactDOM.render(
-    <AllenhubPage name='Nathan' />,
+    <BrowserRouter>
+        <AllenhubPage name='Nathan' />
+    </BrowserRouter>,
     // <h1>hi</h1>,
     document.getElementById('root')
 );

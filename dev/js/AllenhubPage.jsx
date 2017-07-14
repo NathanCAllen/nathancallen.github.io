@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 
 import { Menu } from 'semantic-ui-react';
 
@@ -9,15 +9,16 @@ export default class AllenhubPage extends React.Component {
         this.state = {
             page: 'Home',
         };
-        
+
         this.bindThisToFunctionsPassedAsParameters();
     }
-    
+
     bindThisToFunctionsPassedAsParameters() {
-        this.handleMenuClick = this.handleMenuClick.bind(this);
+        this.buildBio = this.buildBio.bind(this);
     }
 
     render() {
+        // return <h1>hi there</h1>;
         return this.buildPageForUser();
     }
 
@@ -25,61 +26,53 @@ export default class AllenhubPage extends React.Component {
         return (
             <div>
                 {this.buildMenuBar()}
-                {this.buildActivePage()}
+                {/* {this.buildPage()} */}
             </div>
         );
     }
 
     buildMenuBar() {
         let pages = this.generateMenuBarItems();
-        return <Menu inverted items={pages} size='large' />;
+        return (
+            <Menu inverted size='large'>
+                {pages}
+            </Menu>
+        );
     }
 
     generateMenuBarItems() {
         return [
-            this.generateMenuBarItem('Home'),
-            this.generateMenuBarItem('Bio'),
-            this.generateMenuBarItem('Resume'),
+            <Menu.Item as={Link} key='home' to='/'>Home</Menu.Item>,
+            <Menu.Item as={Link} key='bio' to='/bio'>Bio</Menu.Item>,
+            <Menu.Item as={Link} key='resume' to='/resume'>Resume</Menu.Item>
         ];
     }
 
-    generateMenuBarItem(key) {
-        return {
-            key,
-            active: this.state.page === key,
-            name: key,
-            onClick: this.handleMenuClick,
-        };
+    buildPage() {
+        return (
+            <main>
+                <Switch>
+                    <Route exact component={this.buildHome} path='/' />
+                    <Route component={this.buildBio} path='/bio' />
+                    <Route component={this.buildResume} path='/resume' />
+                </Switch>
+            </main>
+        );
     }
 
-    handleMenuClick(event, data) {
-        this.setState({
-            page: data.name,
-        });
-    }
-
-    buildActivePage() {
-        let page = this.state.page;
-        if (page === 'Home') {
-            return this.buildHomePage();
-        } else if (page === 'Bio') {
-            return this.buildBioPage();
-        } else if (page === 'Resume') {
-            return this.buildResumePage();
-        } else {
-            return '';
-        }
-    }
-
-    buildHomePage() {
+    buildHome() {
+        console.log('foo');
+        return <h1>hi there</h1>;
         // return <BodyPage page='home' />
     }
 
-    buildBioPage() {
+    buildBio() {
+        return <h1>heroes never die</h1>;
         // return <BodyPage page='bio' />
     }
 
-    buildResumePage() {
+    buildResume() {
+        return <h1>for a price</h1>;
         // return <BodyPage page='resume' />
     }
 }
