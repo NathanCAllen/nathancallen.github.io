@@ -1,93 +1,34 @@
 body {
-        background-color: #7ba4d4;
-}
-
-h2 {
-        text-align: center;
+    background: #7ba4d4;
 }
 
 p {
-        font-weight: bold;
-        font-size: 20px;
-}
-
-p.project {
-        font-weight: normal;
-        font-size: 14px;
-}
-
-ul.menu {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: grey;
-}
-
-li.menu {
-        float: left;
-}
-
-li.menu a {
-        font-weight: bold;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-}
-
-li.menu a:hover {
-        background-color: #111;
-}
-
-img {
-        display: block;
-        margin: auto;
-}
-
-.caption {
-        text-align: center;
-}
-
-#bio {
-        display: none;
-}
-
-#home {
-        display: block;
-}
-
-#resume {
-        display: none;
-}
-
-#projects {
-        display: none;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .bolded {
-        font-weight: bold;
-        font-size: 17px;
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .indented {
-        text-indent: 50px;
-        margin: 0;
+    text-indent: 50px;
+    margin: 0;
 }
 
 .italicized {
-        font-style: italic;
+    font-style: italic;
 }
 
 li.bolded {
-        font-weight: bold;
+    font-weight: bold;
 }
 
 li.normal {
-        font-weight: normal;
+    font-weight: normal;
 }
 
-#resume_pdf {
-        display: none;
-}
+/*#resume_pdf {
+    display: none;
+}*/

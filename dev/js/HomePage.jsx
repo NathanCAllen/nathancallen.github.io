@@ -49,6 +49,7 @@ export default class HomePage extends React.Component {
     buildImageCaption() {
         return (
             <Label
+                color='grey'
                 content='Me with some delicious hot cocoa, 2017'
             />
         );

@@ -3,7 +3,9 @@ import { Link, Route, Switch } from 'react-router-dom';
 
 import { Menu } from 'semantic-ui-react';
 
+import BioPage from './BioPage';
 import HomePage from './HomePage';
+import ResumePage from './ResumePage';
 
 export default class AllenhubPage extends React.Component {
     constructor(props) {
@@ -55,24 +57,21 @@ export default class AllenhubPage extends React.Component {
                 <Switch>
                     <Route exact component={this.buildHome} path='/' />
                     <Route exact component={this.buildBio} path='/bio' />
-                    <Route component={this.buildResume} path='/resume' />
+                    <Route exact component={this.buildResume} path='/resume' />
                 </Switch>
             </main>
         );
     }
 
     buildHome() {
-        // return <h1>hi there</h1>;
         return <HomePage />;
     }
 
     buildBio() {
-        return <h1>heroes never die</h1>;
-        // return <BodyPage page='bio' />
+        return <BioPage />;
     }
 
     buildResume() {
-        return <h1>for a price</h1>;
-        // return <BodyPage page='resume' />
+        return <ResumePage />;
     }
 }
