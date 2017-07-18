@@ -29,6 +29,10 @@ li.normal {
     font-weight: normal;
 }
 
+a {
+    color: rgb(217, 135, 28);
+}
+
 /*#resume_pdf {
     display: none;
 }*/
