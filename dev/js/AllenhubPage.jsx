@@ -47,7 +47,11 @@ export default class AllenhubPage extends React.Component {
         return [
             <Menu.Item as={Link} key='home' to='/'>Home</Menu.Item>,
             <Menu.Item as={Link} key='bio' to='/bio'>Bio</Menu.Item>,
-            <Menu.Item as={Link} key='resume' to='/resume'>Resume</Menu.Item>
+            <Menu.Item as={Link} key='resume' to='/resume'>Resume</Menu.Item>,
+            <Menu.Item as={'a'} key='github'
+                       href='https://www.github.com/nathancallen'>
+                Github Page
+            </Menu.Item>
         ];
     }
 

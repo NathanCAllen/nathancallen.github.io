@@ -2,13 +2,13 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    devServer: {
-        historyApiFallback: true,
-        inline: true,
-        contentBase: './src',
-        port: 3000,
-    },
-    devtool: 'cheap-module-source-map',
+    // devServer: {
+    //     historyApiFallback: true,
+    //     inline: true,
+    //     contentBase: './src',
+    //     port: 3000,
+    // },
+    // devtool: 'cheap-module-source-map',
     entry: './dev/js/index.jsx',
     module: {
         loaders: [

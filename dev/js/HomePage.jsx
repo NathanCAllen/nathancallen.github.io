@@ -20,7 +20,8 @@ export default class HomePage extends React.Component {
         return (
             <Header size='large'>
                 Hi! Welcome to my personal web page.
-                You'll find my bio and resume in the menu above.
+                You'll find my bio and resume in the menu above, as well as a
+                link to my Github page.
                 Thanks for stopping by!
             </Header>
         );
