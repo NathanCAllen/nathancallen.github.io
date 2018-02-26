@@ -1,13 +1,12 @@
 {
-  "name": "vue-2.0-simple-routing-example",
-  "description": "A Vue.js project",
-  "author": "Chris Fritz <chrisvfritz@gmail.com>",
-  "private": true,
+  "name": "nathancallen.github.io",
+  "version": "3.0.0",
+  "author": "Nathan Allen <nathan@allenhub.com>",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "predeploy": "npm run build",
-    "deploy": "surge --project . --domain vue-2-simple-routing-example.surge.sh"
+    "deploy": "surge --project . --domain nathancallen.github.io.surge.sh"
   },
   "dependencies": {
     "jquery": "^3.3.1",
