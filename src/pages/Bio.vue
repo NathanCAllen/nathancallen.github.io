@@ -5,11 +5,13 @@
       fall of 2015, and have been pursuing majors in computer science and
       physics. In my free time, I like to make simple web apps and video games.
       You can find links to, and descriptions of, the projects I'm most proud
-      of in the 'Projects' tab (coming soon!).\n
+      of in the 'Projects' tab (coming soon!).
+    </p>
+    <p>
       When I'm not chasing bugs, I can be found reading a sci-fi or fantasy
       novel, particularly one by R.A. Salvatore, Timothy Zahn, or Brandon
-      Sanderson, or designing the next dungeon in my DnD campaign. I'm always on
-      the hunt for a well-designed D&D module or a realized fantasy setting, so
+      Sanderson, or designing the next dungeon in my D&amp;D campaign. I'm always on
+      the hunt for a well-designed D&amp;D module or a realized fantasy setting, so
       don't be afraid to reach out!
     </p>
   </main-layout>
