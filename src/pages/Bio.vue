@@ -3,11 +3,14 @@
     <p>
       I grew up in the suburbs of Boston. I started my studies at Tufts in the
       fall of 2015, and have been pursuing majors in computer science and
-      physics. I love designing and implementing web apps. I also love fantasy
-      and sci-fi, especially the works of R.A. Salvatore, Timothy Zahn, and
-      George R.R. Martin. I also love sprawling open-world RPGs and weird indie
-      games with cute graphics. I intend to graduate in the spring of 2019, with
-      fanfare and a job.
+      physics. In my free time, I like to make simple web apps and video games.
+      You can find links to, and descriptions of, the projects I'm most proud
+      of in the 'Projects' tab (coming soon!).\n
+      When I'm not chasing bugs, I can be found reading a sci-fi or fantasy
+      novel, particularly one by R.A. Salvatore, Timothy Zahn, or Brandon
+      Sanderson, or designing the next dungeon in my DnD campaign. I'm always on
+      the hunt for a well-designed D&D module or a realized fantasy setting, so
+      don't be afraid to reach out!
     </p>
   </main-layout>
 </template>

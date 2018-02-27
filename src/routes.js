@@ -1,5 +1,6 @@
 export default {
   '/': 'Home',
   '/bio': 'Bio',
-	'/resume': 'Resume'
+	'/resume': 'Resume',
+  '/unity': 'Unity'
 }
