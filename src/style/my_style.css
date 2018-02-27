@@ -36,3 +36,7 @@ a {
 /*#resume_pdf {
     display: none;
 }*/
+
+.item {
+  outline: 0;
+}
