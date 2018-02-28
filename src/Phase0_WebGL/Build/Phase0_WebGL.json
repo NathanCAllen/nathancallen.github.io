@@ -1,0 +1,13 @@
+{
+"companyName": "The Chair Room",
+"productName": "House of Diodarra",
+"dataUrl": "Phase0_WebGL.data.unityweb",
+"asmCodeUrl": "Phase0_WebGL.asm.code.unityweb",
+"asmMemoryUrl": "Phase0_WebGL.asm.memory.unityweb",
+"asmFrameworkUrl": "Phase0_WebGL.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
