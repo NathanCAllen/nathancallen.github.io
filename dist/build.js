@@ -11644,17 +11644,21 @@ var _Main2 = _interopRequireDefault(_Main);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var gameInstance = UnityLoader.instantiate("gameContainer", "../HouseOfDiodarra/Build/Phase0_WebGL.json", { onProgress: UnityProgress }); //
+//
+//
+//
+//
+//
+
+console.log(gameInstance);
+
 exports.default = {
   components: {
     MainLayout: _Main2.default
   },
   name: "unity"
-}; //
-//
-//
-//
-//
-//
+};
 
 /***/ }),
 /* 16 */
@@ -12363,7 +12367,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('main-layout')
+  return _c('main-layout', [_c('div', {
+    staticStyle: {
+      "width": "960px",
+      "height": "600px"
+    },
+    attrs: {
+      "id": "gameContainer"
+    }
+  })])
 },staticRenderFns: []}
 
 /***/ }),
@@ -12393,36 +12405,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
     staticClass: "ui large centered inverted menu"
-  }, [_c('a', {
-    staticClass: "item"
   }, [_c('v-link', {
+    staticClass: "item",
     attrs: {
       "href": "/"
     }
-  }, [_vm._v("Home")])], 1), _vm._v(" "), _c('a', {
-    staticClass: "item"
-  }, [_c('v-link', {
+  }, [_vm._v("Home")]), _vm._v(" "), _c('v-link', {
+    staticClass: "item",
     attrs: {
       "href": "/bio"
     }
-  }, [_vm._v("Bio")])], 1), _vm._v(" "), _c('a', {
-    staticClass: "item"
-  }, [_c('v-link', {
+  }, [_vm._v("Bio")]), _vm._v(" "), _c('v-link', {
+    staticClass: "item",
     attrs: {
       "href": "/resume"
     }
-  }, [_vm._v("Resume")])], 1), _vm._v(" "), _vm._m(0)]), _vm._v(" "), _c('div', {
-    staticClass: "ui center aligned segment basic"
-  }, [_vm._t("default")], 2)])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('a', {
-    staticClass: "item"
-  }, [_c('a', {
+  }, [_vm._v("Resume")]), _vm._v(" "), _c('a', {
+    staticClass: "item",
     attrs: {
       "href": "https://www.github.com/nathancallen"
     }
-  }, [_vm._v("\n        Github Page\n      ")])])
-}]}
+  }, [_vm._v("\n        Github Page\n      ")])], 1), _vm._v(" "), _c('div', {
+    staticClass: "ui center aligned segment basic"
+  }, [_vm._t("default")], 2)])
+},staticRenderFns: []}
 
 /***/ }),
 /* 36 */
