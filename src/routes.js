@@ -1,14 +1,7 @@
 export default {
-  '': 'Home',
-  'bio': 'Bio',
-	'resume': 'Resume',
-  'unity': {
-    '': 'Unity',
-    'HouseOfDiodarra': 'Unity',
-  },
-  // 'profile': {
-  //   '': 'Home',
-  //   'bio': 'Bio',
-  // 	'resume': 'Resume',
-  // }
+  '/': 'Home',
+  '/bio': 'Bio',
+	'/resume': 'Resume',
+  '/reviews': 'reviews/Home',
+  '/reviews/feed': 'reviews/Feed',
 }

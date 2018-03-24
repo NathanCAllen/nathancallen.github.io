@@ -1,20 +1,12 @@
 <template>
   <div>
     <div class="ui large centered inverted menu">
-      <!-- <a class="item"> -->
-        <v-link class="item" href="/">Home</v-link>
-      <!-- </a> -->
-      <!-- <a class="item"> -->
-        <v-link class="item" href="/bio">Bio</v-link>
-      <!-- </a> -->
-      <!-- <a class="item"> -->
-        <v-link class="item" href="/resume">Resume</v-link>
-      <!-- </a> -->
-      <!-- <a class="item"> -->
-        <a class="item" href="https://www.github.com/nathancallen">
-          Github Page
-        </a>
-      <!-- </a> -->
+      <v-link class="item" href="/">Home</v-link>
+      <v-link class="item" href="/bio">Bio</v-link>
+      <v-link class="item" href="/resume">Resume</v-link>
+      <a class="item" href="https://www.github.com/nathancallen">
+        Github Page
+      </a>
     </div>
     <div class="ui center aligned segment basic">
       <slot></slot>
