@@ -4,4 +4,5 @@ export default {
 	'/resume': 'Resume',
   '/reviews': 'reviews/Home',
   '/reviews/feed': 'reviews/Feed',
+  // '/reviews/*': 'reviews/Review',
 }
