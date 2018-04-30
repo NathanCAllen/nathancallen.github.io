@@ -3,6 +3,7 @@ export default {
   '/bio': 'Bio',
 	'/resume': 'Resume',
   '/reviews': 'reviews/Home',
-  '/reviews/feed': 'reviews/Feed',
+  '/reviews/books': 'reviews/Books',
+  // '/reviews/games': 'reviews/Games',
   // '/reviews/*': 'reviews/Review',
 }

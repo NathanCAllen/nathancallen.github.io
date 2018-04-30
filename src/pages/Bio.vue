@@ -3,7 +3,7 @@
     <p>
       I grew up in the suburbs of Boston. I started my studies at Tufts in the
       fall of 2015, and have been pursuing majors in computer science and
-      physics. In my free time, I like to make simple web apps and video games.
+      physics. In my free time, I like to make small web apps and video games.
       You can find links to, and descriptions of, the projects I'm most proud
       of in the 'Projects' tab (coming soon!).
     </p>

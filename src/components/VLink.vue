@@ -15,7 +15,7 @@
     props: {
       href: {
         type:String,
-        required: true 
+        required: true
       }
     },
     computed: {

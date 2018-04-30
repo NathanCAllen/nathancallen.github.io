@@ -24,7 +24,7 @@
   const review = reviews[product];
 
   if (!review) {
-    window.location.replace('/reviews');
+    window.location.replace('/reviews'); // TODO: redirect without reloading
   }
 
   export default {

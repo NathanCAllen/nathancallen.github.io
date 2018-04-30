@@ -8,7 +8,7 @@
         Github Page
       </a>
     </div>
-    <div class="ui center aligned segment basic">
+    <div class="ui container center aligned segment basic">
       <slot></slot>
     </div>
   </div>

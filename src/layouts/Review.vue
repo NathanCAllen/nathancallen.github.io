@@ -2,9 +2,10 @@
   <div>
     <div class="ui large centered inverted menu">
       <v-link class="item" href="/reviews">Home</v-link>
-      <v-link class="item" href="/reviews/feed">Feed</v-link>
+      <v-link class="item" href="/reviews/books">Books</v-link>
+      <!-- <v-link class="item" href="/reviews/games">Games</v-link> -->
     </div>
-    <div class="ui center aligned container segment basic">
+    <div class="ui container segment basic">
       <slot></slot>
     </div>
   </div>
