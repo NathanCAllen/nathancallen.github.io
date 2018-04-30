@@ -5,37 +5,12 @@ body {
 p {
     font-weight: bold;
     font-size: 20px;
-}
-
-.bolded {
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.indented {
-    text-indent: 50px;
-    margin: 0;
-}
-
-.italicized {
-    font-style: italic;
-}
-
-li.bolded {
-    font-weight: bold;
-}
-
-li.normal {
-    font-weight: normal;
+    text-align: left;
 }
 
 a {
     color: rgb(217, 135, 28);
 }
-
-/*#resume_pdf {
-    display: none;
-}*/
 
 .item {
   outline: 0;

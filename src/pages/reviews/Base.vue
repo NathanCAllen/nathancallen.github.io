@@ -31,7 +31,7 @@
     components: {
 	    ReviewLayout
     },
-    data () {
+    data() {
       return review;
     },
 	  name: "base"

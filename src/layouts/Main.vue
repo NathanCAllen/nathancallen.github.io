@@ -4,7 +4,7 @@
       <v-link class="item" href="/">Home</v-link>
       <v-link class="item" href="/bio">Bio</v-link>
       <v-link class="item" href="/resume">Resume</v-link>
-      <a class="item" href="https://www.github.com/nathancallen">
+      <a class="item" href="https://www.github.com/nathancallen" target="_blank">
         Github Page
       </a>
     </div>

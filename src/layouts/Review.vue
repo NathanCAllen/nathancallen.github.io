@@ -4,7 +4,7 @@
       <v-link class="item" href="/reviews">Home</v-link>
       <v-link class="item" href="/reviews/feed">Feed</v-link>
     </div>
-    <div class="ui center aligned segment basic">
+    <div class="ui center aligned container segment basic">
       <slot></slot>
     </div>
   </div>
