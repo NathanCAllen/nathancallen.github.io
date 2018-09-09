@@ -29,6 +29,15 @@ const app = new Vue({
         : require('./pages/404.vue');
     }
   },
+  // components: {
+  //   reviews: () => fetch('http://allenhub-staging.herokuapp.com/reviews/get-list')
+  //     .then(response => {
+  //       return response.json();
+  //     }).then(json => {
+  //       //console.log(components);
+  //       return json;
+  //     })
+  // },
   render(h) {
     return h(this.ViewComponent);
   }
